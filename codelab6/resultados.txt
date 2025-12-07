@@ -1,0 +1,12 @@
+Tras realizar las pruebas con las 3 imágenes, mi elección para un proyecto en tiempo real sería YOLOv8
+
+Porque?
+
+- Velocidad: Como se observa en la tabla, YOLO tuvo un tiempo de inferencia promedio de 0.15 segundos, 
+mientras que SSD tardó alrededor de 1.2 segundos. YOLO es casi 10 veces más rápido, lo cual es crítico 
+para video en vivo (FPS).
+- Consistencia: A pesar de ser mucho más ligero, el IoU promedio fue alto (cercano a 0.9), lo que indica 
+que YOLO detecta los objetos en la misma posición que el modelo más pesado (SSD).
+- Detección: El número de objetos detectados por YOLOv8 fue mayor, por lo cual resulta más util para detectar variedad de elementos
+SSD solo lo consideraría si tuviera hardware muy potente y necesitara detectar objetos extremadamente pequeños 
+donde YOLOv8 Nano pudiera fallar, pero para aplicaciones generales, YOLO es superior en eficiencia.
